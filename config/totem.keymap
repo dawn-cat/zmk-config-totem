@@ -22,10 +22,10 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <100>;
-    global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    quick-tap-ms = <150>;
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    require-prior-idle-ms = <125>;
 };
 
 / {
@@ -66,10 +66,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q       &kp W       &kp E        &kp R        &kp T      &kp Y    &kp U             &kp I               &kp O           &kp P
-                &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G      &kp H    &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LEFT_GUI SEMI
-&kp LEFT_SHIFT  &kp Z       &kp X       &kp C        &kp V        &kp B      &kp N    &kp M             &kp COMMA           &kp DOT         &kp FSLH           &kp RIGHT_SHIFT
-                                        &lt 5 ESC    &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 BACKSPACE   &lt 4 DELETE
+                &kp Q       &kp W       &kp E        &kp R        &kp T      &kp Y        &kp U             &kp I               &kp O           &kp P
+                &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G      &kp H        &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LEFT_GUI SEMI
+&kp LEFT_SHIFT  &kp Z       &kp X       &kp C        &kp V        &kp B      &kp N        &kp M             &kp COMMA           &kp DOT         &kp FSLH           &kp RIGHT_SHIFT
+                                        &lt 5 ESC    &lt 1 SPACE  &kp TAB    &lt 3 ENTER  &lt 2 BACKSPACE   &lt 4 DELETE
             >;
         };
 
