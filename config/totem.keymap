@@ -33,12 +33,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
         krenswitch {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <36 37>;
@@ -52,6 +46,11 @@
         maple {
             bindings = <&tog 7>;
             key-positions = <32 37>;
+        };
+
+        nohomerow {
+            bindings = <&tog 8>;
+            key-positions = <32 35>;
         };
     };
 
@@ -204,6 +203,15 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp K
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans           &trans  &trans
                         &trans  &trans  &trans    &trans  &trans          &trans
+            >;
+        };
+
+        no_home_row {
+            bindings = <
+        &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &kp A   &kp S   &kp D             &kp F   &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &mt LCTRL ESCAPE  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
