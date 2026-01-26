@@ -218,19 +218,19 @@
 
         lol1 {
             bindings = <
-              &trans  &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-              &kp A   &kp S   &kp D      &kp F      &trans    &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT  &trans  &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp LCTRL  &kp SPACE  &mo 9     &trans  &trans  &trans
+                  &trans  &trans  &trans   &trans  &trans       &trans  &trans  &trans  &trans  &trans
+                  &kp A   &kp S   &kp D    &kp F   &trans       &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans  &trans  &trans   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                                  &kp ESC  &mo 9   &kp SPACE    &trans  &trans  &trans
             >;
         };
 
         lol2 {
             bindings = <
-         &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans    &trans  &trans  &trans  &trans  &trans
-         &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&kp TAB  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans  &trans  &trans    &trans  &trans  &trans
+         &kp LA(Q)  &kp LA(W)     &kp LA(E)     &kp LA(R)     &trans    &trans  &trans  &trans  &trans  &trans
+         &trans     &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp N1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans        &trans        &trans    &trans  &trans  &trans
             >;
         };
     };
