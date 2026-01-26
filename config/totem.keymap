@@ -227,10 +227,10 @@
 
         lol2 {
             bindings = <
-         &kp LA(Q)  &kp LA(W)     &kp LA(E)     &kp LA(R)     &trans    &trans  &trans  &trans  &trans  &trans
-         &trans     &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp N1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans        &trans        &trans    &trans  &trans  &trans
+         &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &trans    &trans  &trans  &trans  &trans  &trans
+         &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp F1     &kp F2     &kp F3     &kp F4     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans     &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
