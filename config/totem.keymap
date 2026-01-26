@@ -23,20 +23,15 @@
 
 &mt {
     quick-tap-ms = <175>;
-    flavor = "balanced";
-    tapping-term-ms = <250>;
-    require-prior-idle-ms = <150>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <300>;
+    require-prior-idle-ms = <125>;
     hold-trigger-on-release;
 };
 
 / {
     combos {
         compatible = "zmk,combos";
-
-        krenswitch {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <36 37>;
-        };
 
         one-hand_maple {
             bindings = <&tog 6>;
@@ -48,7 +43,7 @@
             key-positions = <32 37>;
         };
 
-        nohomerow {
+        lol {
             bindings = <&tog 8>;
             key-positions = <32 35>;
         };
@@ -181,10 +176,10 @@
 
         etc_layer {
             bindings = <
-        &bootloader  &bt BT_CLR  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &sys_reset   &bt BT_NXT  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &bt BT_PRV  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans  &trans  &trans    &trans  &trans  &trans
+        &bootloader  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &trans    &trans  &trans  &trans  &trans  &trans
+        &sys_reset   &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans        &trans        &trans    &trans  &trans  &trans
             >;
         };
 
@@ -206,12 +201,21 @@
             >;
         };
 
-        no_home_row {
+        lol1 {
             bindings = <
-        &trans  &trans  &trans            &trans     &trans    &trans  &trans  &trans  &trans  &trans
-        &kp A   &kp S   &kp D             &kp F      &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &mt LCTRL ESCAPE  &kp SPACE  &trans    &trans  &trans  &trans
+              &trans  &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
+              &kp A   &kp S   &kp D      &kp F      &trans    &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &trans  &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp LCTRL  &kp SPACE  &mo 9     &trans  &trans  &trans
+            >;
+        };
+
+        lol2 {
+            bindings = <
+         &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &trans    &trans  &trans  &trans  &trans  &trans
+         &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp TAB  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
