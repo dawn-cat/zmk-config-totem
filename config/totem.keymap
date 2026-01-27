@@ -26,7 +26,6 @@
     flavor = "balanced";
     tapping-term-ms = <230>;
     require-prior-idle-ms = <125>;
-    hold-trigger-on-release;
 };
 
 / {
@@ -47,6 +46,11 @@
             bindings = <&tog 8>;
             key-positions = <32 35>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <35 0>;
+        };
     };
 
     behaviors {
@@ -60,7 +64,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <130>;
             flavor = "tap-preferred";
-            hold-trigger-on-release;
         };
     };
 
@@ -112,7 +115,7 @@
             bindings = <
         &trans        &trans        &trans            &trans          &kp LG(LS(S))    &trans      &trans         &trans         &trans       &trans
         &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans           &kp CAPS    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT
-&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &kp LC(Y)        &kp INSERT  &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+&trans  &trans        &trans        &trans            &trans          &trans           &kp INSERT  &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
                                     &trans            &none           &trans           &kp ENTER   &kp BACKSPACE  &kp DELETE
             >;
         };
@@ -218,19 +221,10 @@
 
         lol1 {
             bindings = <
-                  &trans  &trans  &trans   &trans  &trans       &trans  &trans  &trans  &trans  &trans
-                  &kp A   &kp S   &kp D    &kp F   &trans       &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &trans  &trans  &trans   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                                  &kp ESC  &mo 9   &kp SPACE    &trans  &trans  &trans
-            >;
-        };
-
-        lol2 {
-            bindings = <
-         &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &trans    &trans  &trans  &trans  &trans  &trans
-         &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp N1     &kp N2     &kp N3     &kp N4     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans     &trans     &trans    &trans  &trans  &trans
+              &trans        &trans        &trans        &trans        &trans     &trans  &trans  &trans  &trans  &trans
+              &kp A         &kp S         &kp D         &kp F         &trans     &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                                          &kp LCTRL     &kp SPACE     &kp TAB    &trans  &trans  &trans
             >;
         };
     };
