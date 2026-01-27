@@ -229,7 +229,7 @@
             bindings = <
          &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &trans    &trans  &trans  &trans  &trans  &trans
          &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp F1     &kp F2     &kp F3     &kp F4     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp N1     &kp N2     &kp N3     &kp N4     &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                &trans     &trans     &trans    &trans  &trans  &trans
             >;
         };
