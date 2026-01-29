@@ -203,10 +203,10 @@
 
         one_hand_maple {
             bindings = <
-       &kp Q         &kp W         &kp E         &kp R            &kp INSERT    &trans  &trans  &trans  &trans  &trans
-       &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &kp G         &trans  &trans  &trans  &trans  &trans
-&kp A  &kp NUMBER_4  &kp NUMBER_3  &kp D         &kp F            &kt D         &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp LEFT_ALT  &kp SPACE        &kp ENTER     &trans  &trans  &mo 4
+       &kp Q         &kp W         &kp E         &kp R            &kp INSERT    &kp INSERT  &kp Q      &kp W         &kp E         &kp R
+       &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &kp G         &kp G       &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT
+&kp A  &kp NUMBER_4  &kp NUMBER_3  &kp D         &kp F            &kt D         &kt D       &kp F      &kp D         &kp NUMBER_3  &kp NUMBER_4  &kp A
+                                   &kp LEFT_ALT  &kp SPACE        &kp ENTER     &kp ENTER   &kp SPACE  &kp LEFT_ALT
             >;
         };
 
