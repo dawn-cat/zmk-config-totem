@@ -46,6 +46,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <35 0>;
         };
+
+        dia2 {
+            bindings = <&tog 8>;
+            key-positions = <34 35>;
+        };
     };
 
     behaviors {
@@ -200,7 +205,7 @@
             bindings = <
        &kp Q         &kp W         &kp E         &kp R            &kp INSERT    &kp INSERT  &kp Q      &kp W         &kp E         &kp R
        &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &kp G         &kp G       &kp LEFT   &kp DOWN      &kp UP        &kp RIGHT
-&kp A  &kp NUMBER_4  &kp NUMBER_3  &kp D         &kp F            &kt D         &kt D       &kp F      &kp D         &kp NUMBER_3  &kp NUMBER_4  &kp A
+&kp A  &kp NUMBER_4  &kp NUMBER_3  &kp D         &kp S            &kt D         &kt D       &kp S      &kp D         &kp NUMBER_3  &kp NUMBER_4  &kp A
                                    &kp LEFT_ALT  &kp SPACE        &kp ENTER     &kp ENTER   &kp SPACE  &kp LEFT_ALT
             >;
         };
@@ -210,7 +215,16 @@
         &trans  &trans  &trans  &trans     &trans     &trans   &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4
         &kp A   &kp S   &kp D   &kp F      &trans     &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &trans  &trans  &trans  &trans  &trans     &trans     &kp INS  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kt D
-                        &trans  &kp SPACE  &kp TAB    &trans   &kp LEFT_ALT    &trans
+                        &trans  &kp SPACE  &kp TAB    &trans   &trans          &kp LEFT_ALT
+            >;
+        };
+
+        dia2 {
+            bindings = <
+        &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &kp A      &kp S   &kp D   &kp F   &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &mo 2   &trans    &trans  &trans  &trans
             >;
         };
     };
